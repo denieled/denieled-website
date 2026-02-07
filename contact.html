@@ -21,15 +21,36 @@
 </header>
 
 <main class="container">
+
   <h1>Contact</h1>
 
-  <p>
-    For inquiries, collaborations, or general questions, reach out at:
-  </p>
+  <form action="https://formspree.io/f/abcd1234"
+        method="POST"
+        style="max-width:520px; margin-top:40px;">
 
-  <p>
-    <strong>Email:</strong> info@denieled.com
-  </p>
+    <p>
+      <label>Email<br>
+        <input type="email" name="email" required
+               style="width:100%; padding:10px;">
+      </label>
+    </p>
+
+    <p>
+      <label>Message<br>
+        <textarea name="message" required
+                  style="width:100%; padding:10px; height:120px;"></textarea>
+      </label>
+    </p>
+
+    <p>
+      <button type="submit"
+              style="padding:12px 24px; cursor:pointer;">
+        Send message
+      </button>
+    </p>
+
+  </form>
+
 </main>
 
 <footer class="site-footer">
