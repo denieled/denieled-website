@@ -10,12 +10,15 @@
 
 <header class="site-header">
   <div class="container">
-    <img src="assets/img/logo.png" alt="Denieled" class="logo">
+    <a href="/" class="logo-link">
+      <img src="assets/img/logo.png" alt="Denieled" class="logo">
+    </a>
+
     <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="services.html">Services</a>
-      <a href="contact.html">Contact</a>
+      <a href="/">Home</a>
+      <a href="/about.html">About</a>
+      <a href="/services.html">Services</a>
+      <a href="/contact.html">Contact</a>
     </nav>
   </div>
 </header>
@@ -27,6 +30,9 @@
   <form action="https://formspree.io/f/xgolepvy"
         method="POST"
         style="max-width:520px; margin-top:40px;">
+
+    <!-- Anti-spam honeypot -->
+  <input type="text" name="_gotcha" style="display:none">
 
     <input type="hidden" name="_redirect"
          value="https://denieled.com/thanks.html">
@@ -46,8 +52,7 @@
     </p>
 
     <p>
-      <button type="submit"
-              style="padding:12px 24px; cursor:pointer;">
+      <button type="submit" class="btn-primary">
         Send message
       </button>
     </p>
