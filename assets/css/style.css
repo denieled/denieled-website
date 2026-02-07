@@ -43,7 +43,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 12px 24px; /* header más angosto */
+  padding: 12px 16px; /* header más angosto *//* menos padding lateral */
 }
 
 .logo {
@@ -97,7 +97,7 @@ main h1 {
 
 main p {
   font-size: 18px;
-  max-width: 720px; /* textos menos angostos */
+  max-width: 900px; /* textos menos angostos *//* más ancho = menos sensación de centrado */
   color: #444;
 }
 
