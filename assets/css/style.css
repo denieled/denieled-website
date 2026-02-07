@@ -15,7 +15,7 @@ body {
   flex-direction: column;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
   line-height: 1.6;
-  color: #000;
+  color: #111;
   background: #fff;
 }
 
@@ -36,7 +36,7 @@ main {
    HEADER
 ========================= */
 .site-header {
-  background: #111;
+  background: #000;
 }
 
 .site-header .container {
