@@ -146,5 +146,24 @@ main p {
   .services-grid {
     grid-template-columns: 1fr;
   }
+
+   /* =========================
+   BUTTONS
+========================= */
+
+.btn-primary {
+  background: #111;
+  color: #fff;
+  border: none;
+  padding: 12px 28px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  opacity: 0.85;
+}
+
 }
 
