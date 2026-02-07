@@ -179,3 +179,18 @@ body {
 main {
   flex: 1;
 }
+
+/* =========================
+   HERO FULL WIDTH IMAGE
+========================= */
+
+.hero-image {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
