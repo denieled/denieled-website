@@ -1,12 +1,18 @@
 /* =========================
-   RESET BÁSICO
+   RESET + BASE
 ========================= */
 * {
   box-sizing: border-box;
 }
 
-body {
+html, body {
+  height: 100%;
   margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
   line-height: 1.6;
   color: #000;
@@ -14,8 +20,12 @@ body {
 }
 
 /* =========================
-   CONTENEDOR GENERAL
+   LAYOUT
 ========================= */
+main {
+  flex: 1;
+}
+
 .container {
   max-width: 1100px;
   margin: 0 auto;
@@ -40,7 +50,7 @@ body {
   display: block;
 }
 
-/* Navegación */
+/* NAV */
 nav a {
   color: #fff;
   text-decoration: none;
@@ -54,12 +64,8 @@ nav a:hover {
 }
 
 /* =========================
-   CONTENIDO PRINCIPAL
+   MAIN CONTENT
 ========================= */
-main {
-  padding-top: 80px;
-}
-
 main h1 {
   font-size: 44px;
   line-height: 1.2;
@@ -73,46 +79,8 @@ main p {
 }
 
 /* =========================
-   FOOTER
-========================= */
-.site-footer {
-  margin-top: 120px;
-  border-top: 1px solid #eee;
-  background: #fafafa;
-}
-
-.site-footer p {
-  margin: 0;
-  font-size: 13px;
-  color: #777;
-}
-
-/* =========================
-   RESPONSIVE (MOBILE)
-========================= */
-@media (max-width: 768px) {
-  .site-header .container {
-    flex-direction: column;
-    gap: 16px;
-  }
-
-  nav a {
-    margin: 0 12px;
-  }
-
-  main {
-    padding-top: 48px;
-  }
-
-  main h1 {
-    font-size: 32px;
-  }
-}
-
-/* =========================
    SERVICES (CARDS)
 ========================= */
-
 .services {
   margin-top: 120px;
 }
@@ -141,16 +109,9 @@ main p {
   color: #555;
 }
 
-/* Responsive */
-@media (max-width: 900px) {
-  .services-grid {
-    grid-template-columns: 1fr;
-  }
-
-   /* =========================
+/* =========================
    BUTTONS
 ========================= */
-
 .btn-primary {
   background: #111;
   color: #fff;
@@ -165,25 +126,9 @@ main p {
   opacity: 0.85;
 }
 
-}
-html, body {
-  height: 100%;
-  margin: 0;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-}
-
-main {
-  flex: 1;
-}
-
 /* =========================
    HERO FULL WIDTH IMAGE
 ========================= */
-
 .hero-image {
   width: 100vw;
   margin-left: calc(-50vw + 50%);
@@ -193,4 +138,42 @@ main {
   width: 100%;
   height: auto;
   display: block;
+}
+
+/* =========================
+   FOOTER
+========================= */
+.site-footer {
+  border-top: 1px solid #eee;
+  background: #fafafa;
+}
+
+.site-footer p {
+  margin: 0;
+  font-size: 13px;
+  color: #777;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 900px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .site-header .container {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  nav a {
+    margin: 0 12px;
+  }
+
+  main h1 {
+    font-size: 32px;
+  }
 }
