@@ -16,7 +16,7 @@ body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
   line-height: 1.6;
   color: #111;
-  background: #fff;
+  background: #ededed;
 }
 
 /* =========================
@@ -84,7 +84,7 @@ main {
 
 /* Navegación */
 nav a {
-  color: #fff;
+  color: #ededed;
   text-decoration: none;
   margin-left: 28px;
   font-size: 15px;
