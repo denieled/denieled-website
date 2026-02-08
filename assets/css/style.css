@@ -41,9 +41,10 @@ main {
 
 .hero-header {
   position: relative;
-  height: 42vh;
-  min-height: 260px;
+  height: 40vh;
+  min-height: 240px;
   overflow: hidden;
+  isolation: isolate; /* 🔒 bloquea efectos de zoom */
 }
 
 .hero-bg {
